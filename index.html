@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clipwave — Turn Streams & Videos into Clips</title>
+  <meta name="description" content="Clipwave helps you scan streams and videos, find the best moments, and generate ready-to-post clips with captions and custom formats." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top">Clipwave</a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav class="nav" id="nav">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#formats">Formats</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Free • Fast • Creator-friendly</p>
+          <h1>Turn long streams and videos into ready-to-post clips</h1>
+          <p class="lead">Clipwave scans your content, finds highlight moments, and helps you generate clips with the right length, focus, format, and captions.</p>
+          <div class="actions">
+            <a class="btn primary" href="#how">See how it works</a>
+            <a class="btn secondary" href="#features">Explore features</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h2>Quick setup</h2>
+          <ul class="checklist">
+            <li>Paste a link or upload a video</li>
+            <li>Choose scan window & clip length</li>
+            <li>Pick format, focus, and captions</li>
+            <li>Generate and export clips</li>
+          </ul>
+          <div class="demo-box" id="demoBox">
+            <span class="dot"></span>
+            <span id="demoText">Ready to scan highlights…</span>
+          </div>
+          <button class="btn small" id="demoBtn" type="button">Preview scan flow</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <h2>Features</h2>
+        <p class="section-lead">Built for finding and clipping the best moments without a complicated workflow.</p>
+        <div class="grid cards">
+          <article class="card">
+            <h3>Multi-source ingest</h3>
+            <p>Work with links from platforms like YouTube, Twitch, Kick, TikTok, Instagram, or upload your own files.</p>
+          </article>
+          <article class="card">
+            <h3>Smart scanning</h3>
+            <p>Scan selected windows of long videos to quickly surface promising moments instead of processing everything blindly.</p>
+          </article>
+          <article class="card">
+            <h3>Clip length control</h3>
+            <p>Choose target clip lengths (like 30s, 1m, 1.5m, 2m, or auto) before cutting/scanning to match your goals.</p>
+          </article>
+          <article class="card">
+            <h3>Formats & focus</h3>
+            <p>Generate clips in different aspect ratios and framing/focus options to fit shorts, reels, and wide formats.</p>
+          </article>
+          <article class="card">
+            <h3>Captions from speech</h3>
+            <p>Burn in captions from real transcripts when available, so clips are easier to follow and more shareable.</p>
+          </article>
+          <article class="card">
+            <h3>Fast iteration</h3>
+            <p>Adjust settings, rescan windows, and render clips with audio preserved for the full clip duration.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section alt">
+      <div class="container">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li><strong>Add a source:</strong> paste a video/stream URL or upload a file.</li>
+          <li><strong>Configure scan:</strong> pick the time window, target clip length, format, focus, and caption options.</li>
+          <li><strong>Find moments:</strong> Clipwave analyzes the selected section and suggests highlight clips.</li>
+          <li><strong>Render & export:</strong> generate clips and download the versions you want to post.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="formats" class="section">
+      <div class="container">
+        <h2>Made for every platform</h2>
+        <div class="grid formats">
+          <div class="format"><span>9:16</span><p>Shorts, Reels, TikTok</p></div>
+          <div class="format"><span>1:1</span><p>Square feed posts</p></div>
+          <div class="format"><span>16:9</span><p>YouTube & widescreen</p></div>
+          <div class="format"><span>4:5</span><p>Portrait feed clips</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section alt">
+      <div class="container">
+        <h2>FAQ</h2>
+        <div class="faq-list">
+          <details>
+            <summary>Can I choose clip length before scanning?</summary>
+            <p>Yes — you can select a target clip length (or auto) so generated moments better match the style you need.</p>
+          </details>
+          <details>
+            <summary>Does it support captions?</summary>
+            <p>Clipwave can add burned-in captions from real speech transcripts when transcription is available/configured in the full app.</p>
+          </details>
+          <details>
+            <summary>Can this static site run the full Clipwave app?</summary>
+            <p>No. This is a static landing page (HTML/CSS/JS) for GitHub Pages. The full Clipwave app requires a server environment with dependencies like Node.js, ffmpeg, and yt-dlp for ingesting and rendering.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p><strong>Clipwave</strong> — scan, clip, and share faster.</p>
+      <p class="muted">Static site ready for GitHub Pages. Replace links/content as needed.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
