@@ -1,0 +1,16 @@
+node_modules
+.next
+out
+dist
+*.log
+npm-debug.log*
+.env
+.env.local
+.env*.local
+data
+prisma/data
+.DS_Store
+Thumbs.db
+*.tsbuildinfo
+next-env.d.ts
+.vercel

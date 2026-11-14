@@ -1,0 +1,16 @@
+node_modules
+.next
+out
+dist
+data
+prisma/data
+.env
+.env.*
+!.env.example
+.git
+.github
+*.log
+npm-debug.log*
+Thumbs.db
+.DS_Store
+tsconfig.tsbuildinfo

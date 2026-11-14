@@ -1,0 +1,20 @@
+services:
+  clipwave:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      APP_URL: ${APP_URL:-http://localhost:3000}
+      SESSION_SECRET: ${SESSION_SECRET:-change-me-in-production}
+      DATABASE_URL: file:/data/clipwave.db
+      DATA_DIR: /data
+      WORKER_INLINE: "1"
+      # Optional integrations:
+      # OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      # OPENAI_MODEL: gpt-4o-mini
+    volumes:
+      - clipwave-data:/data
+    restart: unless-stopped
+
+volumes:
+  clipwave-data:
